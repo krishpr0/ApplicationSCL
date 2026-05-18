@@ -24,7 +24,7 @@ class StudyInsight {
 
 
 
-class StudyPerformance {
+class SubjectPerformance {
     final String subject;
     int totalAssignments;
     int completedAssignments;
@@ -80,7 +80,7 @@ class WeeklyActivity {
 
 
     WeeklyActivity ({
-        required this.weekStartm,
+        required this.weekStart,
         required this.dailyStudyMinutes,
         this.totalAssignmentsCompleted = 0,
         this.totalStudySessions = 0,

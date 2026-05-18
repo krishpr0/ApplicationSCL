@@ -36,6 +36,7 @@ import 'screens/login_screen.dart';
 import 'screens/signup_screen.dart';
 import '../screens/study_timer_screen.dart';
 import 'screens/smart_recommendations_screen.dart';
+import 'screens/study_insight_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -1311,6 +1312,24 @@ class _AssignmentManagerState extends State<AssignmentManager> {
               );
             },
             tooltip: 'Dashboard',
+          ),
+
+
+          //Button for study insgihts'
+          IconButton(
+            icon: const Icon(Icons.insights),
+            onPressed:() {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => StudyInsightScreen(
+                    assignments: _assignments,
+                    studySession: [],
+                  ),
+                ),
+              );
+            },
+            tooltip: 'Study Insights',
           ),
 
 /*
